@@ -77,6 +77,7 @@ const translations = {
     contact: {
       line1: "Lavoriamo",
       line2: "insieme.",
+      phone: "Telefono",
     },
 
     footer: {
@@ -155,6 +156,7 @@ const translations = {
     contact: {
       line1: "Let's work",
       line2: "together.",
+      phone: "Phone",
     },
 
     footer: {
@@ -542,21 +544,36 @@ export default function Home() {
             </h2>
           </ScrollReveal>
 
-          <div className="mt-16 grid gap-4 md:max-w-3xl md:grid-cols-2">
+          <div className="mt-16 grid gap-4 md:grid-cols-3">
             <ScrollReveal delay={80}>
               <a
-                href="mailto:antoniolorusso.work@outlook.com"
+                href="mailto:antoniolorusso218@gmail.com"
                 className="work-card block h-full border border-white/10 p-6 transition hover:border-white/30"
               >
                 <div className="text-sm text-white/35">Email</div>
 
                 <div className="mt-3 break-all text-lg">
-                  antoniolorusso.work@outlook.com
+                  antoniolorusso218@gmail.com
                 </div>
               </a>
             </ScrollReveal>
 
             <ScrollReveal delay={160}>
+              <a
+                href="tel:+393317204567"
+                className="work-card block h-full border border-white/10 p-6 transition hover:border-white/30"
+              >
+                <div className="text-sm text-white/35">
+                  {t.contact.phone}
+                </div>
+
+                <div className="mt-3 text-lg">
+                  +39 331 720 4567
+                </div>
+              </a>
+            </ScrollReveal>
+
+            <ScrollReveal delay={240}>
               <a
                 href="https://www.linkedin.com/in/antonio-lorusso-3b96a9279/"
                 target="_blank"
